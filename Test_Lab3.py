@@ -28,3 +28,27 @@ def test_bubble_sort_invalid():
     result = Lab3.bubble_sort(input_arr, 3)
 
     assert (result == [])
+
+def test_morethanten():
+    result = []
+    input_arr = [10,9,8,7,6,5,4,3,2,1,0]
+
+    result = Lab3.bubble_sort(input_arr, 1)
+
+    assert (result == 1)
+
+def test_nonumbers():
+    result = []
+    input_arr = []
+
+    result = Lab3.bubble_sort(input_arr, 1)
+
+    assert(result == 0)
+
+def test_notint():
+    result = []
+    input_arr = ["a","b","c"]
+
+    result = Lab3.bubble_sort(input_arr, 1)
+
+    assert(result == 2)
